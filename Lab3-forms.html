@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<Title>Lab3-forms.html</Title>
+</head>
+<body>
+<h1>Coffee order form</h1>
+    <form action="https://www.w3schools.com/action_page.php" method="get">
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+        </p>
+        <p>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" />
+        </p>
+        <p>
+            <label for="Coffee">Coffee type:</label>
+            <select id="coffee">    
+            <option value="Latte">Latte</option>
+            <option value="Cappuccino">Cappuccino</option>
+            <option value="Americano">Americano</option>
+            <option value="Espresso">Espresso</option>
+            </select>
+        </p>
+        <p>
+            <fieldset>
+                <legend>Coffee size:</legend>
+                  <input type="radio" id="coffeeChoice1" name="size" value="Small" />
+                  <label for="CoffeeChoice1">Small</label>
+            
+                  <input type="radio" id="CoffeeChoice2" name="size" value="Medium" />
+                  <label for="CoffeeChoice2">Medium</label>
+            
+                  <input type="radio" id="CoffeeChoice3" name="Size" value="Large" />
+                  <label for="CoffeeChoice3">Large</label>
+              </fieldset>
+        </p>
+        <p>
+            <feildset>
+                <legend>Extras:</legend>
+                <div>
+                    <input type="checkbox" id="Whipped cream" name="Extras" value="Whipped cream" />
+                    <label for="Whipped cream">Whipped cream</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="Extra shot" name="Extras" value="Extra shot" />
+                    <label for="Extra shot">Extra shot</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="Almond milk" name="Extras" value="Almond milk" />
+                    <label for="Almond milk">Almond milk</label>
+                  </div>
+            </feildset>
+        </p>
+        <p>
+            <p><label for="Instructions">Special instructions:</label></p>
+            <textarea id="Instructions" name="Special instructions" rows="4" cols="50"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Submit form">
+        </p>
+      </form>
+</body>
